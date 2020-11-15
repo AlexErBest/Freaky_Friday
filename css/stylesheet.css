@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    font-size: 20px;
+    font-family: Calibri, "Calibri Light";
+    font-weight: bold;
+}
+
+
+.menurow {
+    background-color: pink;
+}
+
+.menurow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.kol-1 {width: 8.33%;}
+.kol-2 {width: 16.66%;}
+.kol-3 {width: 25%;}
+.kol-4 {width: 33.33%;}
+.kol-5 {width: 41.66%;}
+.kol-6 {width: 50%;}
+.kol-7 {width: 58.33%;}
+.kol-8 {width: 66.66%;}
+.kol-9 {width: 75%;}
+.kol-10 {width: 83.33%;}
+.kol-11 {width: 91.66%;}
+.kol-12 {width: 100%;}
+
+
+
+[class*="kol-"] {
+    float: left;
+    padding: 15px;
+/*    border: 1px solid red; */
+}
+
+.logo {
+    height: 56px;
+    background-image: url("../imgs/grislogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    align-content: center;
+}
+
+.menu_element:hover {
+    background-color: palevioletred;
+    color: black;
+    text-decoration: underline;
+}
+
+.banner {
+    background-image: url("../imgs/gris_banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.backtotop {
+    float: right;
+    font-size: normal;
+    font-weight: normal;
+}
